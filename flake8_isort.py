@@ -5,9 +5,9 @@ from testfixtures import OutputCapture
 import os
 
 try:
-    from pep8 import stdin_get_value
-except ImportError:
     from pycodestyle import stdin_get_value
+except ImportError:
+    from pep8 import stdin_get_value
 
 
 try:
